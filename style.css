@@ -1,0 +1,222 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  padding-bottom: 10px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+#sunset{
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size:cover;
+  }
+
+.bookplate{
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+
+.bookplate:before{
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.397);
+  filter: blur(8px);
+  margin: -20px;
+}
+
+.lean1{
+  /* transform: perspective(100em) rotateX(30deg) rotateZ(10deg) skewY(-17deg) rotateY(-120deg) ; */
+}
+
+.lean{
+  transform: perspective(100em) rotateX(30deg) rotateZ(10deg) skewY(17deg) rotateY(-20deg);
+}
+.floating-img{
+
+  transform: translateY(-5%);
+  animation: float 7.5s infinite;
+  transition: ease 9.5s;
+  overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+	transform: translatey(0px);
+	animation: float 2s ease-in-out infinite;
+
+
+}
+
+
+
+/* Gradient*/
+.movingGradient {
+  background: linear-gradient(270deg, #51504d,green, gold,#51504d);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 13s ease infinite;
+  -moz-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(193, 191, 191, 0.8);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(155, 153, 153, 0.3);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(213, 211, 211, 0.8);
+		transform: translatey(0px);
+	}
+}
+
+
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    #pic1{
+      display: none;
+    }
+    #picspace{
+      padding: 0rem!important;
+      margin: 0rem!important; 
+    }
+  #tword{
+    font-size: 3.5rem!important;
+  }
+    #gap{
+      padding-top: 0rem!important;
+      margin-top: 0rem!important;  
+      /* padding-bottom: 0rem; */
+    }
+
+    #title{
+      font-weight:300!important;  
+    }
+  
+    #container{
+      width: 100%!important;
+    }
+  
+   }
+
+
+
+
+
+.animate-character
+{
+  background-image: linear-gradient(
+    -225deg,
+    #3a3937 0%,
+    rgb(2, 93, 2) 29%,
+    rgb(177, 151, 1) 67%,
+    #3a3937 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
