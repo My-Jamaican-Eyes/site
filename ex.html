@@ -12,7 +12,7 @@
 </head>
 
 <body style="background-image: url(images/sundarkbase.jpeg);  background-repeat: no-repeat;background-size:cover;">
-    <nav class="navbar   navbar-light navbar-expand-lg" style="background-color: rgb(0, 0, 0,0)!important;">
+    <nav class="navbar   navbar-light navbar-expand-lg" style="background-color: #595954!important;">
         <div class="container">
             <a href="index.html" class="navbar-brand">
                 <h2 style="font-weight: 300;">Lancelot AkaNico</h2>
@@ -36,12 +36,13 @@
 
   <!-- Two Column Section -->
   <div  class="min-vh-100  " id="booksection" style="background-color: #595954;" >  
-    <h1 class="container  text-light display-4 font-weight-bold text-center pt-4" >Written Works</h1>
+    <h1 class="container  text-light display-4 font-weight-bold text-center pt-4" > Excerpts</h1>
     <div class="border-top  w-25 mx-auto"></div>
 
     <div class="container  text-light text-light  ">
       <div class="row mx-3 pt-3 "  >
-        <div class="col-md-5 my-4  py-4 bookplate"  >
+
+          <div class="col-md-5 my-4 bookplate py-4" onclick="toggleContent('content1')" style="cursor: pointer;">
           <div class="text-center">
             <!-- <img id="usa"  src="images/usabook.jpeg" onclick="changeImage('usa')" alt=""  style="max-width: 60%;"> -->
             <br>
@@ -50,41 +51,50 @@
           </div>
           
           <h4 class="my-4 text-center">Through My Jamaican Eyes Book 1</h4>
-          <h5 class=" text-center">MY AMERICAN REALITY</h5>
+            <h5 class="text-center" onclick="toggleContent('content1')" style="cursor: pointer;">MY AMERICAN REALITY</h5>
+            <div id="content1" style="display: none;">
+            <p class="px-3 text-center"><p class="  px-3  font-italic " style="font-weight: 300">
+
+              "Oh my God! <br> 
+               Oh my God! <br>
+               Oh my God! <br>
+               <br>She wailed,
+               as concrete rushed to meet her limp body. She was saved from impending collision
+               by a set of meaty arms, cradling her to black bosom. 
+               <br> But the son could not feel his mother's wail.
+               <br>He could not hear her pain.
+               <br>His black body lay sprawled upon filthy sidewalk. Blood from the exit wounds filled the crevices,
+               hardened like grout between the cracks in aged concrete.
+ 
+               <br><br>Death had come and made claim.<br><br>
+               "I'm Langston,"<br>
+               said he, his hand extended in greeting, 
+               <br>I shook his hand, nodded, but said nothing "I am the child America tried to abort," he said<br>
+               "I am the pain hidden behind bikini lines;<br>
+               the stretch marks between folds covered by guilt.<br>
+               I am the black mark that can never be whited out,<br>
+               because, my blood also striped the American flag."<br><br><br>
+               <span class="d-flex justify-content-end">page 4: 'State of the Republic'</span></p>
+               <!-- <p class="px-3">page 4: "State of the Republic" -->
+               </p></p>
+            </div>
+            <script>
+            function toggleContent(id) {
+              var content = document.getElementById(id);
+              if (content.style.display === "none") {
+              content.style.display = "block";
+              } else {
+              content.style.display = "none";
+              }
+            }
+            </script></div>
           <!-- <p class="px-3  text-center">Many came from far and wide for a chance to live the American Dream. Some elected to take control of their own destiny by creating an Alternate American Reality. This book, inspired by actual events, sheds some light into the darkness, thus bringing to vision, the ugliness, illusion, delusion, and confusion, lining the perilous path between the American Dream, and the American Reality. -->
             </p>
-            <h5 class=" text-center">An Excerpt: <br>
-            </h5>
+            
+            <div class="row-md-2 mx-3 pt-3 "> </div>
 
-            <p class="  px-3  font-italic " style="font-weight: 300">
 
-             "Oh my God! <br> 
-              Oh my God! <br>
-              Oh my God! <br>
-              <br>She wailed,
-              as concrete rushed to meet her limp body. She was saved from impending collision
-              by a set of meaty arms, cradling her to black bosom. 
-              <br> But the son could not feel his mother's wail.
-              <br>He could not hear her pain.
-              <br>His black body lay sprawled upon filthy sidewalk. Blood from the exit wounds filled the crevices,
-              hardened like grout between the cracks in aged concrete.
-
-              <br><br>Death had come and made claim.<br><br>
-              "I'm Langston,"<br>
-              said he, his hand extended in greeting, 
-              <br>I shook his hand, nodded, but said nothing "I am the child America tried to abort," he said<br>
-              "I am the pain hidden behind bikini lines;<br>
-              the stretch marks between folds covered by guilt.<br>
-              I am the black mark that can never be whited out,<br>
-              because, my blood also striped the American flag."<br><br><br>
-              <span class="d-flex justify-content-end">page 4: 'State of the Republic'</span></p>
-              <!-- <p class="px-3">page 4: "State of the Republic" -->
-              </p>
-          
-        </div>
- <div class="col-md-2 "></div>
-
-        <div class="col-md-5 my-4 bookplate py-4">
+        <div class="col-md-5 my-4 bookplate py-4" onclick="toggleContent('content2')" style="cursor: pointer;">
           <div class="text-center">
             <!-- <img id="fire" src="images/firebook.jpeg" onclick="changeImage('fire')" alt="" style="max-width: 60%;"> -->
             <br>
@@ -94,12 +104,11 @@
           
 
             <h4 class="my-4 text-center">Through My Jamaican Eyes Book 2</h4>
-            <h5 class="text-center">AMERICA: I Am Race</h5>
 
-            <!-- <p class="px-3 text-center">We spend so much time thinking of ourselves as race and gender, that we lose sight of who we are as humans. This tug-of-war has scrambled AMERICA, to serve us a putrid dish of Race. The stories, poems and quotes contained in this bock were inspired by actual events depicting the manifestation of our current race-based society. -->
-              </p>
-              <h5 class="text-center">An Excerpt:</h5>
-              <p class="px-3 font-weight-bold">"Oh, look! Can you see? <br>Yes, I can see</p>
+            <h5 class="text-center" >AMERICA: I Am Race</h5>
+            <div id="content2" style="display: none;">
+            <p class="px-3 text-center"><p class="  px-3  font-italic " style="font-weight: 300">
+
               <p class="  px-3  font-italic " style="font-weight: 300"> 
               
                 I see anger organizing <br>
@@ -123,12 +132,17 @@
                 <span class="d-flex justify-content-end">page 43: 'Oh, look! Can you see?'</span></p>
 
               </p>
+            <!-- <p class="px-3 text-center">We spend so much time thinking of ourselves as race and gender, that we lose sight of who we are as humans. This tug-of-war has scrambled AMERICA, to serve us a putrid dish of Race. The stories, poems and quotes contained in this bock were inspired by actual events depicting the manifestation of our current race-based society. -->
+              </p>
+              <h5 class="text-center">An Excerpt:</h5>
+              <p class="px-3 font-weight-bold">"Oh, look! Can you see? <br>Yes, I can see</p>
+              
         </div>
 
       </div>
     </div>
   </div>
-
+  </div>
   <!-- start footer  -->
     <footer class="" id="contact" style="background-color: #3a3937;">
       <div class="container">
